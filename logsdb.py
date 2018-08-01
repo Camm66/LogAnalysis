@@ -24,8 +24,7 @@ def get_top_authors():
     c.execute("""
               SELECT authors.name AS author, COUNT(*) AS views
               FROM log, articles, authors
-              WHERE log.path != '/'
-              AND log.path LIKE CONCAT('%/', articles.slug)
+              WHERE log.path LIKE CONCAT('/article/', articles.slug)
               AND articles.author = authors.id
               GROUP BY authors.name
               ORDER BY views DESC;
