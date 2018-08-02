@@ -5,7 +5,7 @@ newspaper site. It operates from the command line to report the following
 metrics in a plain text format:
 1. What are the most popular three articles of all time?
 2. Who are the most popular article authors of all time?
-3. On which days did more than 1% of requests lead to errors?
+3. On which days did more than 1% of page requests lead to errors?
 
 ## Linux VM Installation
 This module operates on a PostgreSQL Database Server provided by a Linux
@@ -30,7 +30,7 @@ Once the installation concludes, run `vagrant ssh` to run the the newly
 installed VM.
 
 ## Running the database
-Once the VM has been installed, `cd` into the `vagrant` directory and load
+Once the VM is up and running, `cd` into the `vagrant` directory and load
 the data from _newsdata.sql_ with the following command:
 * `psql -d news -f newsdata.sql.`
 
