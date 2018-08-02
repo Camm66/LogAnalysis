@@ -31,10 +31,10 @@ installed VM.
 
 ## Running the database
 Once the VM has been installed, `cd` into the `vagrant` directory and load
-the data from 'newsdata.sql' with the following command:
+the data from _newsdata.sql_ with the following command:
 * `psql -d news -f newsdata.sql.`
 
-The `newsdata.sql` file can be downloaded [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+The `newsdata.sql` file can be downloaded [here.](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
 These commands perform the following:
 * `psql` — the PostgreSQL command line program
@@ -50,7 +50,7 @@ Table names for this database: _articles_, _authors_, _log_
 
 ## Create VIEWs
 
-The **get_days_with_most_errors()** module relies on the creation of the
+The **print_error_days()** module relies on the creation of the
 following views in the psql terminal:
 
 ```
